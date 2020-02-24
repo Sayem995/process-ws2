@@ -5,5 +5,10 @@ describe SchoolReport do
     it 'should return a correctly formatted green amount when given green' do
       expect(subject.format("Green")).to eq "Green: 1"
     end
+
+    it 'should return a correctly formatted green amount when given two greens' do
+      expect(subject.format("Green, Green")).to eq "Green: 2"
+    end
+
   end
 end
